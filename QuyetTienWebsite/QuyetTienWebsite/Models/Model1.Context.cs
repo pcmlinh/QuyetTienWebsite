@@ -25,5 +25,7 @@ namespace QuyetTienWebsite.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<BangSanPham> BangSanPhams { get; set; }
+        public virtual DbSet<LoaiSanPham> LoaiSanPhams { get; set; }
     }
 }
